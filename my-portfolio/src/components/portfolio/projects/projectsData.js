@@ -1,6 +1,7 @@
 import Meme from "../../../Images/meme.png";
 import Specter from "../../../Images/Specter.png";
 import Spenditure from "../../../Images/spenditure.png";
+import Timenow from "../../../Images/timenow.png";
 
 export const projects = [
   {
@@ -23,20 +24,20 @@ export const projects = [
   },
   {
     id: 3,
-    projectImage: Spenditure,
-    title: "Spenditure Budget App",
+    projectImage: Timenow,
+    title: "TimeNow",
     links: {
-      link: "https://spenditure.netlify.app/",
-      title: "Spenditure",
+      link: "/timenow",
+      title: "TimeNow",
     },
   },
   {
     id: 4,
     projectImage: Spenditure,
-    title: "TimeNow",
+    title: "Spenditure Budget App",
     links: {
-      link: "/timenow",
-      title: "TimeNow",
+      link: "https://spenditure.netlify.app/",
+      title: "Spenditure",
     },
   },
 ];
