@@ -76,7 +76,7 @@ export const HamburgerMenu = () => {
 
 const Nav = () => {
   return (
-    <div className="nav text-neutral-500 text-lg sm:px-24 py-3">
+    <div className="nav bg-black text-neutral-500 text-lg sm:px-24 py-3">
       <div className="flex justify-between">
         <div className="logo shrink-0 self-center">
           <a href="/">Johnathan Specter</a>
