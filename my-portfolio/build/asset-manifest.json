@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.053734c2.css",
-    "main.js": "/static/js/main.6a7c5f73.js",
+    "main.css": "/static/css/main.a187d417.css",
+    "main.js": "/static/js/main.8b510aee.js",
     "static/media/spenditure.png": "/static/media/spenditure.8db7b04450208588cf9f.png",
     "static/media/nature.jpg": "/static/media/nature.ed45ce41105accd32db7.jpg",
     "static/media/Mockup.png": "/static/media/Mockup.09b8b7e9368e98e1d29c.png",
     "static/media/Specter.png": "/static/media/Specter.0119fcf3144e5b179883.png",
     "static/media/meme.png": "/static/media/meme.20ec2a0f1af4a1b7cb49.png",
+    "static/media/timenow.png": "/static/media/timenow.7a9fd58e6465aeba5675.png",
     "static/media/YelpCamp.png": "/static/media/YelpCamp.4ba1dc4f8e26622ca1a0.png",
     "static/media/Spense.png": "/static/media/Spense.5c6339199db7cf4bc335.png",
     "static/media/blue.jpg": "/static/media/blue.6fd65536dcfeed1172ad.jpg",
@@ -34,11 +35,11 @@
     "static/media/Shield.svg": "/static/media/Shield.d1304ce631705a4225556d9444f7ce92.svg",
     "static/media/arrow2.svg": "/static/media/arrow2.5714c8e8436d0924e0699527a4054698.svg",
     "static/media/Hamburger.svg": "/static/media/Hamburger.2906868f2147af3352bbd705735b2a0e.svg",
-    "main.053734c2.css.map": "/static/css/main.053734c2.css.map",
-    "main.6a7c5f73.js.map": "/static/js/main.6a7c5f73.js.map"
+    "main.a187d417.css.map": "/static/css/main.a187d417.css.map",
+    "main.8b510aee.js.map": "/static/js/main.8b510aee.js.map"
   },
   "entrypoints": [
-    "static/css/main.053734c2.css",
-    "static/js/main.6a7c5f73.js"
+    "static/css/main.a187d417.css",
+    "static/js/main.8b510aee.js"
   ]
 }

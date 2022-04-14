@@ -20,7 +20,10 @@ const Main = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2">
         <div className="sm:px-24 mt-5">
           <div className="px-5 sm:px-5 flex justify-between sm:justify-start">
+            <a href="/">
               <img src={Logo} alt="logo" />
+            </a>
+
             <div className="hidden sm:flex">
               <Nav />
             </div>
