@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 
 const Contacts = ({ type, placeholder }) => {
-  const [input, setInput] = useState("");
-  const [textArea, setTextArea] = useState("");
+  const [state, setState] = useState({ email: "", textarea: "", name: "" });
 
   const handleOnChange = (e) => {
-    setInput((prevState) => prevState(e.target.value));
-  };
-  const handleTextAreaChange = (e) => {
-    setTextArea((prevState) => prevState(e.target.value));
+    setState({ ...state, [e.target.value]: e.target.value });
   };
 
   return (
@@ -16,23 +12,35 @@ const Contacts = ({ type, placeholder }) => {
       <div className="flex flex-col w-80">
         {type === "textarea" ? (
           <textarea
+            value={state.textarea}
             name="message"
-            value={textArea}
-            onChange={handleTextAreaChange}
+            onChange={handleOnChange}
             placeholder={placeholder}
-            className="text-lg p-2 outline-cyan-500 rounded" required
+            className="text-lg p-2 outline-cyan-500 rounded"
+            required
+          />
+        ) : type === "email" ? (
+          <input
+            type="email"
+            value={state.email}
+            onChange={handleOnChange}
+            placeholder={placeholder}
+            className="text-lg p-2 outline-cyan-500 rounded"
+            required
           />
         ) : (
           <input
             type="text"
             name="name"
-            value={input}
+            value={state.name}
             onChange={handleOnChange}
             placeholder={placeholder}
-            className="text-lg p-2 outline-cyan-500 rounded" required
+            className="text-lg p-2 outline-cyan-500 rounded"
+            required
           />
         )}
       </div>
+      <h1>{state.textarea}</h1>
     </div>
   );
 };

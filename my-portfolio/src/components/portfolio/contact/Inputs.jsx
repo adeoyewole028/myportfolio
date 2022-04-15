@@ -7,7 +7,7 @@ const input = FormInputs.map((input) => <Contacts key={input.id} {...input} />);
 const Inputs = () => {
   const [submit, setSubmit] = useState("");
   const handleSubmit = (e) => {
-    setSubmit((prevState) => prevState(e.target.value));
+    setSubmit((e.target.value));
   };
   return (
     <form
