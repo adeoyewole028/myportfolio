@@ -6,14 +6,24 @@ const ProjectPortfolio = ({ projectImage, title, links }) => {
     <div className="">
       <div className="sm:w-72 p-5 text-white text-center border m-5 rounded">
         <div>
-          <Link to={links.link}>
-            <img className="port" src={projectImage} alt="" />
-          </Link>
+          {links.url ? (
+            <a href={links.url}>
+              <img className="port" src={projectImage} alt="" />
+            </a>
+          ) : (
+            <Link to={links.link}>
+              <img className="port" src={projectImage} alt="" />
+            </Link>
+          )}
 
           <h2>{title}</h2>
 
           <button className="p-2 bg-green-500 rounded ">
-            <Link to={links.link}> {links.title}</Link>
+            {links.url ? (
+              <a href={links.url}>{links.title}</a>
+            ) : (
+              <Link to={links.link}> {links.title}</Link>
+            )}
           </button>
         </div>
       </div>

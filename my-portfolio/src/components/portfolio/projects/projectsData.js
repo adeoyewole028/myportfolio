@@ -18,6 +18,7 @@ export const projects = [
     projectImage: Specter,
     title: "Johnathan Specter Landing Page",
     links: {
+      url: "",
       link: "/devport",
       title: "Johnathan Specter",
     },
@@ -27,6 +28,7 @@ export const projects = [
     projectImage: Timenow,
     title: "TimeNow",
     links: {
+      url: "",
       link: "/timenow",
       title: "TimeNow",
     },
@@ -36,7 +38,8 @@ export const projects = [
     projectImage: Spenditure,
     title: "Spenditure Budget App",
     links: {
-      link: "https://spenditure.netlify.app/",
+      url: "https://spenditure.netlify.app/",
+      link: "",
       title: "Spenditure",
     },
   },

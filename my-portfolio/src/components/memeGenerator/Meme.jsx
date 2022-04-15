@@ -12,14 +12,6 @@ const Meme = (props) => {
     setMemeImage(url);
   };
 
-  //   const thingsArray = ["Thing 1", "Thing 2"];
-
-  //   const things = thingsArray.map((thing) => <p key={thing}>{thing}</p>);
-
-  //   const handleAddArray = () => {
-  //       thingsArray.push(`things ${thingsArray.length + 1}` )
-  //     console.log(thingsArray);
-  //   };
 
 //   const [isGoingOut, setIsGoingOut] = useState(true);
 
@@ -37,10 +29,6 @@ const Meme = (props) => {
           <h1>{isGoingOut ? "yes" : "no"} </h1>
         </div>
       </div> */}
-      {/* {things}
-      <button className="meme--button text-white" onClick={handleAddArray}>
-        Click me
-      </button> */}
 
       {/* <Counter /> */}
 
