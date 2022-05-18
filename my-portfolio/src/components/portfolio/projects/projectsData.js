@@ -2,6 +2,7 @@ import Meme from "../../../Images/meme.png";
 import Specter from "../../../Images/Specter.png";
 import Spenditure from "../../../Images/spenditure.png";
 import Timenow from "../../../Images/timenow.png";
+import Card from "../../../Images/profile card.png"
 
 export const projects = [
   {
@@ -41,6 +42,16 @@ export const projects = [
       url: "https://spenditure.netlify.app/",
       link: "",
       title: "Spenditure",
+    },
+  },
+  {
+    id: 5,
+    projectImage: Card,
+    title: "Profile Card",
+    links: {
+      url: "/profilecard",
+      link: "",
+      title: "Profile Card",
     },
   },
 ];

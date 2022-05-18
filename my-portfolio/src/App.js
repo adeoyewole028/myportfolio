@@ -9,6 +9,7 @@ import Meme from "./components/memeGenerator/Meme";
 import DevLandingPage from "./components/devPort/DevLandingPage";
 import TimeNow from "./components/timeNow/TimeNow";
 import Pricing from "./components/timeNow/pricing/Pricing";
+import Profile from "./components/profileCard/Profile";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/devport/*" element={<DevLandingPage />}></Route>
         <Route exact path="/timenow/*" element={<TimeNow />}></Route>
         <Route exact path="/pricing/*" element={<Pricing />}></Route>
+        <Route exact path="/profilecard/*" element={<Profile />}></Route>
       </Routes>
     </div>
   );

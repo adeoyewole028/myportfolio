@@ -3,7 +3,14 @@ import Header from "./Header";
 import { memeData } from "./memesData";
 
 const Meme = (props) => {
-  const [memeImage, setMemeImage] = useState("");
+  const [memeImage, setMemeImage] = useState({
+    randomImages: "http://i.imgflip.com/1bij.jpg",
+    topText: "",
+    bottomText: "",
+  });
+
+const [allMemeIMages, setAllMemeIMages] = useState('')
+  
 
   const handleClick = () => {
     const memesArray = memeData.data.memes;
@@ -13,12 +20,13 @@ const Meme = (props) => {
   };
 
 
-//   const [isGoingOut, setIsGoingOut] = useState(true);
 
-//   const handleChange = () =>{
-//     setIsGoingOut(prevStat => !prevStat)
-//     // setIsGoingOut(true)
-//   }
+  //   const [isGoingOut, setIsGoingOut] = useState(true);
+
+  //   const handleChange = () =>{
+  //     setIsGoingOut(prevStat => !prevStat)
+  //     // setIsGoingOut(true)
+  //   }
 
   return (
     <div className="">
@@ -54,7 +62,10 @@ const Meme = (props) => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="meme--button p-4 mt-10 text-white" onClick={handleClick}>
+          <button
+            className="meme--button p-4 mt-10 text-white"
+            onClick={handleClick}
+          >
             Get a new meme Image
           </button>
         </div>
