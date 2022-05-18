@@ -3,42 +3,27 @@ import Header from "./Header";
 import { memeData } from "./memesData";
 
 const Meme = (props) => {
-  const [memeImage, setMemeImage] = useState({
+  const [meme, setMeme] = useState({
     randomImages: "http://i.imgflip.com/1bij.jpg",
     topText: "",
     bottomText: "",
   });
 
-const [allMemeIMages, setAllMemeIMages] = useState('')
-  
+  const [allMemeIMages, setAllMemeIMages] = useState(memeData);
 
   const handleClick = () => {
-    const memesArray = memeData.data.memes;
+    const memesArray = allMemeIMages.data.memes;
     const getRandom = Math.floor(Math.random() * memesArray.length);
     const url = memesArray[getRandom].url;
-    setMemeImage(url);
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImages: url,
+    }));
   };
-
-
-
-  //   const [isGoingOut, setIsGoingOut] = useState(true);
-
-  //   const handleChange = () =>{
-  //     setIsGoingOut(prevStat => !prevStat)
-  //     // setIsGoingOut(true)
-  //   }
 
   return (
     <div className="">
       <Header />
-      {/* <div>
-        <h1>Do I feel like ging out tonight?</h1>
-        <div onClick={handleChange}>
-          <h1>{isGoingOut ? "yes" : "no"} </h1>
-        </div>
-      </div> */}
-
-      {/* <Counter /> */}
 
       <div className="">
         <div className="flex justify-center sm:space-x-24 mt-10 space-y-5 sm:space-y-0 flex-wrap">
@@ -70,7 +55,7 @@ const [allMemeIMages, setAllMemeIMages] = useState('')
           </button>
         </div>
         <div className="flex justify-center mt-10">
-          <img className="sm:w-96 w-full" src={memeImage} alt="" />
+          <img className="sm:w-96 w-full" src={meme.randomImages} alt="" />
         </div>
       </div>
     </div>
